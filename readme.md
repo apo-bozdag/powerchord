@@ -98,7 +98,6 @@ pull request acabilirsin. ozellikle su konularda yardim ise yarar:
 - yeni lick'ler (ozellikle blues, funk, metal turleri icin)
 - sus4, dim, aug gibi akor tipleri
 - drop D tuning destegi
-- G teli eklenmesi (solo icin 3 tel)
 - mobil gorunum iyilestirmeleri
 
 ## lisans
