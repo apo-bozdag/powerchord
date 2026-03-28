@@ -179,7 +179,7 @@ function svgDot(x,y,label,color,isRoot,compact){
 function renderMiniFretboard(pc,bass){
   const allF=[pc.rf,pc.ff];if(bass)allF.push(bass.f);
   const mn=Math.min(...allF),mx=Math.max(...allF);
-  const startFret=mn===0?0:Math.max(1,mn-1);
+  const startFret=mn<=1?0:mn-1;
   const fretCount=Math.max(4,mx-startFret+2);
   const ss=15,fs=28,tp=16,lp=20,w=fretCount*fs;
 
