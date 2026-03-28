@@ -120,8 +120,8 @@ function svgFretboard(opts){
   }
 
   // Inlay dots
-  for(let i=0;i<fretCount;i++){
-    const fn=startFret+i+1, cx=lp+(i+.5)*fs, cy=tp+2.5*ss, r=compact?3:5;
+  if(!compact) for(let i=0;i<fretCount;i++){
+    const fn=startFret+i+1, cx=lp+(i+.5)*fs, cy=tp+2.5*ss, r=5;
     if(fn===12){
       s+=`<circle cx="${cx}" cy="${tp+1.2*ss}" r="${r}" fill="${FB.inlay}" opacity=".5"/>`;
       s+=`<circle cx="${cx}" cy="${tp+3.8*ss}" r="${r}" fill="${FB.inlay}" opacity=".5"/>`;
